@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="it.ariadne.prova.registration.service.PRProductLocalService" class="it.ariadne.prova.registration.service.impl.PRProductLocalServiceImpl" />
+	<bean id="it.ariadne.prova.registration.service.persistence.PRProductPersistence" class="it.ariadne.prova.registration.service.persistence.PRProductPersistenceImpl" parent="basePersistence" />
+	<bean id="it.ariadne.prova.registration.service.PRRegistrationLocalService" class="it.ariadne.prova.registration.service.impl.PRRegistrationLocalServiceImpl" />
+	<bean id="it.ariadne.prova.registration.service.persistence.PRRegistrationPersistence" class="it.ariadne.prova.registration.service.persistence.PRRegistrationPersistenceImpl" parent="basePersistence" />
+	<bean id="it.ariadne.prova.registration.service.PRUserLocalService" class="it.ariadne.prova.registration.service.impl.PRUserLocalServiceImpl" />
+	<bean id="it.ariadne.prova.registration.service.persistence.PRUserPersistence" class="it.ariadne.prova.registration.service.persistence.PRUserPersistenceImpl" parent="basePersistence" />
+</beans>
